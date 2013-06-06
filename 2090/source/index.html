@@ -251,15 +251,15 @@
 
 			
 		function commandSwitch( input, output ) {
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $(output).data('output'));
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $(output).data('output'));
 			$( output ).find('div.inputSource').css({ 'background-image': $(input).css('background-image') });
 			$( output ).find('div.inputSource').css('background-size', 'contain' ); 
 		};
 	  
 		function commandAllFront( input ) {
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#leftLZ').data('output'));
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#rightLZ').data('output'));
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#centerLZ').data('output'));		  
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#leftLZ').data('output'));
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#rightLZ').data('output'));
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#centerLZ').data('output'));		  
 			$( "#leftLZ" ).find('div.inputSource').css( 'background-image', $(input).css('background-image') );
 			$( "#leftLZ" ).find('div.inputSource').css( 'background-size', 'contain' );
 			$( "#centerLZ" ).find('div.inputSource').css( 'background-image', $(input).css('background-image') );
