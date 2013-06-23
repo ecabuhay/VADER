@@ -8,7 +8,7 @@
 	<meta	http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1">
 
 	<title>MOFDAC Media Control</title>
-	<meta name="description"	content="Control the front displays in the MSDAC (30A/2090) using this website">
+	<meta name="description"	content="Control the front displays in the MOFDAC (30A/2090) using this website">
 	<meta name="author"	content="DD12">
 
 	<meta name="viewport" content="width=device-width, height=device-height">
@@ -28,32 +28,31 @@
 <!--[if	lt	IE	7]><p	class=chromeframe>Your	browser	is	<em>ancient	and	a	danger	to	security!</em>	<a	href="http://browsehappy.com/">Upgrade	to	a	different	browser</a>	or	<a	href="http://www.google.com/chromeframe/?redirect=true">install	Google	Chrome	Frame</a>	to	experience	this	site.</p><![endif]-->
 	<div id="source-container">
 		<div id="leftInput" class="inputText"></div>
-		<div id="justSources">
-			<div id="widi" class="ui-widget-content source" data-input="1"></div>
-			
-			<div id="clickshare" class="ui-widget-content source" data-input="3"></div>
-			
-			<div id="atv1" class="ui-widget-content source" data-input="2">
-				<!--<div class="sourcelabel">MOFDAC 1</div>-->
-			</div>		
-			<div id="atv2" class="ui-widget-content source" data-input="4">
-				<!--<div class="sourcelabel">MOFDAC 2</div>-->
-			</div>
-			
-			<div id="pc1" class="ui-widget-content source" data-input="5">
-				<!--<div class="sourcelabel">PC Screen 1</div>-->
-			</div>
-
-			<div id="pc2" class="ui-widget-content source" data-input="6">
-				<!--<div class="sourcelabel">PC Screen 2</div>-->
-			</div>
-			
-			<div id="pc3" class="ui-widget-content source" data-input="7">
-				<!--<div class="sourcelabel">PC Screen 3</div>-->
-			</div>
-			
-			<div id="vader" class="ui-widget-content source" data-input="8"></div>
+		<div id="widi" class="ui-widget-content source" data-input="1"></div>
+		
+		<div id="clickshare" class="ui-widget-content source" data-input="3"></div>
+		
+		<div id="atv1" class="ui-widget-content source" data-input="2">
+			<!--<div class="sourcelabel">MOFDAC 1</div>-->
+		</div>		
+		<div id="atv2" class="ui-widget-content source" data-input="4">
+			<!--<div class="sourcelabel">MOFDAC 2</div>-->
 		</div>
+		
+		<div id="pc1" class="ui-widget-content source" data-input="5">
+			<!--<div class="sourcelabel">PC Screen 1</div>-->
+		</div>
+
+		<div id="pc2" class="ui-widget-content source" data-input="6">
+			<!--<div class="sourcelabel">PC Screen 2</div>-->
+		</div>
+		
+		<div id="pc3" class="ui-widget-content source" data-input="7">
+			<!--<div class="sourcelabel">PC Screen 3</div>-->
+		</div>
+		
+		<div id="vader" class="ui-widget-content source" data-input="8"></div>	
+
 		<div id="rightInput" class="inputText"></div>
 		
 	</div>
@@ -61,51 +60,46 @@
 	<!-- Surrounded by the second blue border and contains all droppable boxes along with "default" and "help" buttons -->
 	<div id="outer-main-div">
 		<div id="main-container" >	
-			<div id="leftOutput" class="outputText"></div>
+			<div id="outputs"></div>
 			<div id="leftLZ" class="lz" data-output="1">
-				<div id="leftLZLabel">Left TV</div>
+				<h2>Left TV</h2>
 				<div id="leftSource" class="inputSource"> </div>
 				<div class="soundPanel">
-					<div id="leftMute" class="btnMute" data-output="1"></div>
-					<div id="leftVolDown" class="btnVolDown" data-output="1"></div>
-					<div id="leftVolUp" class="btnVolUp" data-output="1"></div>
+					<div id="leftMute" class="btnMute"></div>
+					<div id="leftVolDown" class="btnVolDown"></div>
+					<div id="leftVolUp" class="btnVolUp"></div>
 				</div>
 				<div class="powerContainer">
-					<div id="leftPower" class="btnPower" data-output="1"> </div>
+					<div id="leftPower" class="btnPower"> </div>
 				</div>
 			</div>
 			
-			<div id="rightOutput" class="outputText"></div>
-			
 			<div id="rightLZ" class="lz" data-output="3">
-				<div id="rightLZLabel">Right TV</div>
+				<h2 style="text-align: right;">Right TV</h2>
 				<div id="rightSource" class="inputSource"> </div>
 				<div class="soundPanel">
-					<div id="rightMute" class="btnMute" data-output="3"></div>
-					<div id="rightVolDown" class="btnVolDown" data-output="3"></div>
-					<div id="rightVolUp" class="btnVolUp" data-output="3"></div>
+					<div id="rightMute" class="btnMute"></div>
+					<div id="rightVolDown" class="btnVolDown"></div>
+					<div id="rightVolUp" class="btnVolUp"></div>
 				</div>
 				<div class="powerContainer">
-					<div id="rightPower" class="btnPower" data-output="3"> </div>
+					<div id="rightPower" class="btnPower"> </div>
 				</div>
 			</div>
 			
 			<div id="centerLZ" class="lz" data-output="2">
-				<div id="centerLZLabel">Projector</div>
-				<div id="centerSource" class="inputSource">
-					<div id="helpAnchor" title="Choose your tour below:">
-					</div>
-				</div>	
+				<h2 style="text-align: center;">Projector</h2>
+				<div id="centerSource" class="inputSource"></div>		
 				<div class="soundPanel">
-					<div id="centerMute" class="btnMute" data-output="2"></div>
-					<div id="centerVolDown" class="btnVolDown" data-output="2"></div>
-					<div id="centerVolUp" class="btnVolUp" data-output="2"></div>
+					<div id="centerMute" class="btnMute"></div>
+					<div id="centerVolDown" class="btnVolDown"></div>
+					<div id="centerVolUp" class="btnVolUp"></div>
 				</div>
 				<div class="powerContainer">
-					<div id="centerPower" class="btnPower"  data-output="2"> </div>
+					<div id="centerPower" class="btnPower"> </div>
 				</div>
 			</div>
-			
+
 		</div>	
 		<div id="topbar">
 			<div id="defaultButton" class="bottomButtons"></div>
@@ -113,7 +107,9 @@
 			<div id="helpButton" class="bottomButtons" href="javascript:void(0);"></div>
 			
 			<div id="allLZ" class="lz">
-				<div id="allLZlabel">All Displays</div>
+				<div id="allLZlabel" style="text-align: center;">
+					<h2 style="text-align: center; margin: 3%;">All Displays</h2>
+				</div>
 			</div>
 		</div>
 		
@@ -131,21 +127,21 @@
 		var activeInput = null;
 		var timeoutId = null;
 		var intervalId = null;
-		$( '#atv1' ).height( $( '#atv1' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='atv1' class='ui-widget-content source glowActive theFront' style='height: " + $( '#atv1' ).innerHeight() + "px; width: " + $( '#atv1' ).innerHeight() + "px;'></div>" ); } });
-		$( '#atv2' ).height( $( '#atv2' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='atv2' class='ui-widget-content source glowActive theFront' style='height: " + $( '#atv2' ).innerHeight() + "px; width: " + $( '#atv2' ).innerHeight() + "px;'></div>" ); }});
-		$( '#widi' ).height( $( '#widi' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='widi' class='ui-widget-content source glowActive theFront' style='height: " + $( '#widi' ).innerHeight() + "px; width: " + $( '#widi' ).innerHeight() + "px;'></div>" ); }});
-		$( '#clickshare' ).height( $( '#clickshare' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='clickshare' class='ui-widget-content source glowActive theFront' style='height: " + $( '#clickshare' ).innerHeight() + "px; width: " + $( '#clickshare' ).innerHeight() + "px;'></div>" ); }});
-		$( '#pc1' ).height( $( '#pc1' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='pc1' class='ui-widget-content source glowActive theFront' style='height: " + $( '#pc1' ).innerHeight() + "px; width: " + $( '#pc1' ).innerHeight() + "px;'></div>" ); }});
-		$( '#pc2' ).height( $( '#pc2' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='pc2' class='ui-widget-content source glowActive theFront' style='height: " + $( '#pc2' ).innerHeight() + "px; width: " + $( '#pc2' ).innerHeight() + "px;'></div>" ); }});
-		$( '#pc3' ).height( $( '#pc3' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='pc3' class='ui-widget-content source glowActive theFront' style='height: " + $( '#pc3' ).innerHeight() + "px; width: " + $( '#pc3' ).innerHeight() + "px;'></div>" ); }});
-		$( '#vader' ).height( $( '#vader' ).width()).draggable({ revert: "invalid" , containment: "window" , appendTo: "body" , helper: function( event ) { return $( "<div id='vader' class='ui-widget-content source glowActive theFront' style='height: " + $( '#vader' ).innerHeight() + "px; width: " + $( '#vader' ).innerHeight() + "px;'></div>" ); }});
+		$( '#atv1' ).height( $( '#atv1' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='atv1' class='ui-widget-content source glowActive theFront' style='height: " + $( '#atv1' ).width() + "px;'></div>" ); } });
+		$( '#atv2' ).height( $( '#atv2' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='atv2' class='ui-widget-content source glowActive theFront' style='height: " + $( '#atv2' ).width() + "px;'></div>" ); }});
+		$( '#widi' ).height( $( '#widi' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='widi' class='ui-widget-content source glowActive theFront' style='height: " + $( '#widi' ).width() + "px;'></div>" ); }});
+		$( '#clickshare' ).height( $( '#clickshare' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='clickshare' class='ui-widget-content source glowActive theFront' style='height: " + $( '#clickshare' ).width() + "px;'></div>" ); }});
+		$( '#pc1' ).height( $( '#pc1' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='pc1' class='ui-widget-content source glowActive theFront' style='height: " + $( '#pc1' ).width() + "px;'></div>" ); }});
+		$( '#pc2' ).height( $( '#pc2' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='pc2' class='ui-widget-content source glowActive theFront' style='height: " + $( '#pc2' ).width() + "px;'></div>" ); }});
+		$( '#pc3' ).height( $( '#pc3' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='pc3' class='ui-widget-content source glowActive theFront' style='height: " + $( '#pc3' ).width() + "px;'></div>" ); }});
+		$( '#vader' ).height( $( '#vader' ).width()).draggable({ revert: "invalid" , containment: "body" , helper: function( event ) { return $( "<div id='vader' class='ui-widget-content source glowActive theFront' style='height: " + $( '#vader' ).width() + "px;'></div>" ); }});
 
-		$( '#allLZ' ).height( $( '#widi' ).width() * 0.8);
-		$( '#centerLZ' ).height( $( '#centerLZ' ).width() * 0.6 );
-		$( '#leftLZ' ).height( $( '#leftLZ' ).width() * 0.94);
-		$( '#rightLZ' ).height( $( '#rightLZ' ).width() * 0.94);
-		$( '#defaultButton' ).height( $( '#widi' ).width() * .8);
-		$( '#helpButton' ).height( $( '#widi' ).width() * .8);
+		$( '#centerLZ' ).height( $( '#centerLZ' ).width() * 0.55 );
+		$( '#leftLZ' ).height( $( '#leftLZ' ).width() * 0.8);
+		$( '#rightLZ' ).height( $( '#rightLZ' ).width() * 0.8);
+		$( '#allLZ' ).height( $( '#widi' ).width() * 0.99);
+		$( '#defaultButton' ).height( $( '#widi' ).width() * .99);
+		$( '#helpButton' ).height( $( '#widi' ).width() * .99);
 		$( '#leftPower' ).height( $( '#leftPower' ).width());
 		$( '#rightPower' ).height( $( '#rightPower' ).width());
 		$( '#centerPower' ).width( $( '#leftPower' ).width());
@@ -171,16 +167,15 @@
 		$( '#centerVolUp').height($('#centerVolUp').width() );
 		$( '#centerVolDown').width($('#leftPower').width() * 0.65);
 		$( '#centerVolDown').height($('#centerVolDown').width() );
-		$( '#leftInput').height($('#widi').height() );
-		$( '#rightInput').height($('#widi').height() );
-		$( '#leftOutput').height($('#centerLZ').height());
-		$( '#rightOutput').height($('#centerLZ').height());
+		$( '#leftInput').height($('#leftInput').width() * 3.5);
+		$( '#rightInput').height($('#rightInput').width() * 3.5);
+		$( '#outputs').height($('#outputs').width() * .3);
 	  
 		$(window).resize(function() {
 			$( '#allLZ' ).height( $( '#widi' ).width() * 0.7);
-			$( '#centerLZ' ).height( $( '#centerLZ' ).width() * 0.6 );
-			$( '#leftLZ' ).height( $( '#leftLZ' ).width() * 0.94 );
-			$( '#rightLZ' ).height( $( '#rightLZ' ).width() * 0.94 );
+			$( '#centerLZ' ).height( $( '#centerLZ' ).width() * 0.55 );
+			$( '#leftLZ' ).height( $( '#leftLZ' ).width() * 0.8 );
+			$( '#rightLZ' ).height( $( '#rightLZ' ).width() * 0.8 );
 			$( '#defaultButton' ).height( $( '#widi' ).width() * .7);
 			$( '#helpButton' ).height( $( '#widi' ).width() * .7);	
 			$( '#atv1' ).height( $( '#atv1' ).width() );
@@ -216,10 +211,10 @@
 			$( '#centerVolUp').height($('#centerVolUp').width() );
 			$( '#centerVolDown').width($('#leftPower').width() * 0.65);
 			$( '#centerVolDown').height($('#centerVolDown').width() );
-			$( '#leftInput').height($('#widi').height() );
-			$( '#rightInput').height($('#widi').height() );
-			$( '#leftOutput').height($('#centerLZ').height());
-			$( '#rightOutput').height($('#centerLZ').height());
+			$( '#leftInput').height($('#leftInput').width() * 3.5);
+			$( '#rightInput').height($('#rightInput').width() * 3.5);
+			$( '#outputs').height($('#outputs').width() * .3);
+
 		});
 
 		
@@ -292,9 +287,6 @@
 	  	  
 
 		$('#allLZlabel').fitText();
-		$('#leftLZLabel').fitText(0.35, { minFontSize: '12px', maxFontSize: '48px' });
-		$('#rightLZLabel').fitText(0.35, { minFontSize: '12px', maxFontSize: '48px' });
-		$('#centerLZLabel').fitText(0.35, { minFontSize: '12px', maxFontSize: '48px' });
 	  
 		$('#defaultButton').click(function() {
 			commandSwitch( $('#pc1'), $('#leftLZ'));
@@ -303,111 +295,44 @@
 		});
 	  
 		$('#helpButton').click(function() {
-			var intro = introJs();
-			intro.setOptions({
-				steps: [
-					{
-						element: '#widi',
-						intro: 'WiDi is a specific Intel chipset installed in many modern laptops. It allows the user of that laptop to wirelessly connect to a WiDi receiver, which is connected to a display, therefore enabling the user to wirelessly display their screen on a different monitor.<br><br><img src="img/widiOverview.png" style="width: 100%;" />',
-						position: 'bottom'
-					},
-					{
-						element: '#widi',
-						intro: 'Make sure your laptop is WiDi compatible by searching on your computer for Intel WiDi<br><br><img src="img/widi1.png" style="width: 100%;" />',
-						position: 'bottom'
-					},
-					{
-						element: '#widi',
-						intro: 'Double Click on that Intel WiDi icon to open the Intel Program and it will automatically scan for WiDi receivers.<br><br><img src="img/widi2.png" style="width: 100%;" />',
-						position: 'bottom'
-					},
-					{
-						element: '#widi',
-						intro: 'Select CR 2090 and click Connect.<br><br><img src="img/widi3.png" style="width: 100%;" />',
-						position: 'bottom'
-					},
-					{
-						element: '#widi',
-						intro: 'The first time you connect to this WiDi receiver enter the 8 digit code (shown on the TV) into the Intel prompt on your computer.',
-						position: 'bottom'
-					},
-					{
-						element: '#widi',
-						intro: 'When connected the status will say Connected.<br><br><img src="img/widi4.png" style="width: 100%;" />',
-						position: 'bottom'
-					},			
-					{
-						element: '#widi',
-						intro: 'You can now drag this WiDi icon onto the display which you would like to share your laptop screen on.',
-						position: 'bottom'
-					},		
-					{
-						element: '#clickshare',
-						intro: 'ClickShare is a new product that uses a USB dongle to output the user’s laptop display to the monitor connected to the ClickShare receiver. It allows most all laptops with a USB port to wirelessly display. It also allows 4 laptops to display on the output display at any one time.<br><br><img src="img/clickshareOverview.png" style="width: 100%;" />',
-						position: 'bottom'
-					},	
-					{
-						element: '#clickshare',
-						intro: '1) Plug in the USB puck into your laptop.<br><br><img src="img/clickshare1.png" style="width: 100%;" />',
-						position: 'bottom'
-					},										
-					{
-						element: '#clickshare',
-						intro: '2) Navigate to My Computer on your laptop and select ClickShare.<br><br><img src="img/clickshare2.png" style="width: 100%;" />',
-						position: 'bottom'
-					},	
-					{
-						element: '#clickshare',
-						intro: '3) Now run the ClickShare.exe file. (Note: If you are on a Mac you will see ClickShare file for MacOSX)<br><br><img src="img/clickshare3.png" style="width: 100%;" />',
-						position: 'bottom'
-					},										
-					{
-						element: '#clickshare',
-						intro: '4) Once the LED on the USB puck is solid white, press the button to share your screen.<br><br><img src="img/clickshare4.png" style="width: 100%;" />',
-						position: 'bottom'
-					},	
-					{
-						element: '#source-container',
-						intro: "Click or drag an input source.",						
-						position: 'bottom'
-					},
-					{
-						element: '#main-container',
-						intro: "Click or drop the input onto any of these ouputs.",								
-						position: 'top'
-					},
-					{
-						element: '#allLZ',
-						intro: "You can also click on or drag to All Displays to display you input on all three displays.",				
-						position: 'top'
-					},	
-					{
-						element: '#defaultButton',
-						intro: "Click the Default Setup button before you leave the room to reset to the default state.",
-						position: 'top'
-					}	
-				]
-			});
-			$("#helpAnchor").dialog({
-			height: 140,
-			modal: true,
-			buttons: {
-				"Quick Help":function () {
-					$(this).dialog("close");
-					intro.goToStep(2).start();
-				},
-				"Full Tour": function() {
-					$(this).dialog("close");		
-					intro.start();
-				}
-			}
-			})
+			startIntro();
 		});
+
+		function startIntro () {
+		  var intro = introJs();
+		  intro.setOptions({
+			steps: [
+			  {
+				element: '#source-container',
+				intro: "Click or drag an input source.",
+				position: 'bottom'
+			  },
+			  {
+				element: '#main-container',
+				intro: "Click or drop the input onto any of these ouputs.",
+				position: 'top'
+			  },
+			  {
+				element: '#allLZ',
+				intro: "You can also click on or drag to All Displays to display you input on all three displays.",
+				position: 'top'
+			  },	
+			  {
+				element: '#defaultButton',
+				intro: "Click the Default Setup button before you leave the room to reset to the default state.",
+				position: 'top'
+			  }	
+			  ]
+		  });
+
+		  intro.start();
+		
+		}
 		
 		$('.btnPower').click(function() {
 			clearInterval(timeoutId);
 			clearInterval(intervalId);
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).data('output') + '/power');
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).parent().data('output') + '/power');
 			timeoutId = setTimeout( function() { mappings_get(); }, 5000);
 			intervalId = setInterval( function() { mappings_get(); }, 10000);
 		});
@@ -416,7 +341,7 @@
 			$('#centerPower').addClass('btnPowerOn');
 			clearInterval(timeoutId);
 			clearInterval(intervalId);
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).data('output') + '/power');
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).parent().data('output') + '/power');
 			timeoutId = setTimeout( function() { mappings_get(); }, 5000);
 			intervalId = setInterval( function() { mappings_get(); }, 10000);
 		});
@@ -431,21 +356,21 @@
 		});	
 				
 		$('.btnMute').click(function() {
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).data('output') + '/volume/mute');
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).parent().parent().data('output') + '/volume/mute');
 		});	
 		
 		$('.btnVolUp').click(function() {
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).data('output') + '/volume/+');
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).parent().parent().data('output') + '/volume/+');
 		});	
 		
 		$('.btnVolDown').click(function() {
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).data('output') + '/volume/-');
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).parent().parent().data('output') + '/volume/-');
 		});
 			
 		function commandSwitch( input, output ) {
 			clearInterval(timeoutId);
 			clearInterval(intervalId);
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $(output).data('output'));
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $(output).data('output'));
 			$( output ).find('div.inputSource').css({ 'background-image': $(input).css('background-image') });
 			$( output ).find('div.inputSource').css('background-size', 'contain' );
 			timeoutId = setTimeout( function() { mappings_get(); }, 5000);
@@ -455,9 +380,9 @@
 		function commandAllFront( input ) {
 			clearInterval(timeoutId);
 			clearInterval(intervalId);
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#leftLZ').data('output'));
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#rightLZ').data('output'));
-			$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#centerLZ').data('output'));		  
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#leftLZ').data('output'));
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#rightLZ').data('output'));
+			//$.get('http://mofdac.vader.jsc.nasa.gov:8000/switch/' + $(input).data('input') + '/' + $('#centerLZ').data('output'));		  
 			$( "#leftLZ" ).find('div.inputSource').css( 'background-image', $(input).css('background-image') );
 			$( "#leftLZ" ).find('div.inputSource').css( 'background-size', 'contain' );
 			$( "#centerLZ" ).find('div.inputSource').css( 'background-image', $(input).css('background-image') );
