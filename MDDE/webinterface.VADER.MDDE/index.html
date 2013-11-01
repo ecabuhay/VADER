@@ -31,7 +31,7 @@
 		<div id="leftInput" class="inputText"></div>
 		<div id="justSources">
 			<div id="widi1" class="ui-widget-content source" data-input="1"></div>
-			<div id="widi2" class="ui-widget-content source" data-input="3"></div>
+			<div id="clickshare" class="ui-widget-content source" data-input="5"></div>
 			
 			<div id="atv1" class="ui-widget-content source" data-input="2">
 				<!--<div class="sourcelabel">MOFDAC 1</div>-->
@@ -39,11 +39,10 @@
 			<div id="atv2" class="ui-widget-content source" data-input="4">
 				<!--<div class="sourcelabel">MOFDAC 2</div>-->
 			</div>
-			
+	
 			<div id="clickshare" class="ui-widget-content source" data-input="5"></div>
 			
 			<div id="vader" class="ui-widget-content source" data-input="6"></div>
-			<div id="tuner" class="ui-widget-content source" data-input="7"></div>
 			
 		</div>
 		<div id="rightInput" class="inputText"></div>
@@ -100,11 +99,9 @@
 			
 		</div>	
 		<div id="topbar">
-			<div id="defaultButton" class="bottomButtonsLeft"></div>
-			
-			<div id="helpButton" class="bottomButtonsRight" href="javascript:void(0);"></div>
-			<div id="tunerButton" class="bottomButtonsRight" ></div>
-			
+-			<div id="defaultButton" class="bottomButtons"></div>
+-			<div id="helpButton" class="bottomButtons" href="javascript:void(0);"></div>
+				
 			<div id="allLZ" class="lz">
 				<div id="allLZlabel">All Displays</div>
 			</div>
@@ -508,16 +505,7 @@
 			timeoutId = setTimeout( function() { mappings_get(); }, 5000);
 			intervalId = setInterval( function() { mappings_get(); }, 10000);
 		});
-
-		$('.btnPower, .btnPowerOn, .btnMute, .btnVolUp, .btnVolDown').hover(function(){
-		if ( !$(this).data('bnc') ){
-			  $(this).effect('bounce', { direction: 'up', distance: 10, times: 1 })
-					 .data('bnc', true);
-		}
-		},function () {
-			 $(this).data('bnc', false);
-		});	
-				
+		
 		$('.btnMute').click(function() {
 			$.get('http://127.0.0.1:8000/display/' + $(this).data('output') + '/volume/mute');
 		});	

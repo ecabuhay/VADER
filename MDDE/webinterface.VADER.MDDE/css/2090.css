@@ -205,8 +205,7 @@ nav a:hover{
 .btnVolUp { background-image: url('../img/soundUp.png'); -moz-border-radius: 15px; border-radius: 15px;  background-size: cover; width:13%; float: left; }
 .btnVolDown { background-image: url('../img/soundDown.png'); -moz-border-radius: 15px; border-radius: 15px;  background-size: cover; width:13%; float: left; }
 .soundPanel { position: absolute; bottom: 0; left: 0; -moz-border-radius: 15px; border-radius: 15px; border-style: inset; background-color: rgba(175,176,179,.75);}
-.bottomButtonsLeft { position: relative; background-repeat: no-repeat; background-position: center; -moz-background-size: contain; background-size: contain; width: 20%; margin-bottom: 1%; -moz-border-radius: 15px; border-radius: 15px; border-style: outset; border-color: rgb(51, 173, 255) ;background-color: rgba(51, 173, 255,.75);}
-.bottomButtonsRight { position: relative; background-repeat: no-repeat; background-position: center; -moz-background-size: contain; background-size: contain; width: 9%; margin-bottom: 1%; margin-left: 1%;-moz-border-radius: 15px; border-radius: 15px; border-style: outset; border-color: rgb(51, 173, 255) ;background-color: rgba(51, 173, 255,.75);}
+.bottomButtons { position: relative; background-repeat: no-repeat; background-position: center; -moz-background-size: contain; background-size: contain; width: 20%; margin-bottom: 1%; -moz-border-radius: 15px; border-radius: 15px; border-style: outset; border-color: rgb(51, 173, 255) ;background-color: rgba(51, 173, 255,.75);}
 .inputText{ background-image: url('../img/inputTextWhite.png'); -moz-background-size: contain; background-size: contain; background-repeat: no-repeat; width: 7%;}
 #leftInput{ position: absolute; left: 3%; top: 20%; }
 #rightInput{ position: absolute; left: 93%; top: 20%; }
@@ -240,15 +239,11 @@ nav a:hover{
 .btnVolDown:active {
 	background-image:url('../img/soundDown2.png'); 
 }
+.bottomButtons:active {
+	border-style: inset;
+	border-width: 6px;
+}
 
-.bottomButtonsLeft:active {
-	border-style: inset;
-	border-width: 6px;
-}
-.bottomButtonsRight:active {
-	border-style: inset;
-	border-width: 6px;
-}
 
 /* OVERRIDE JQUERY TO CENTER THE BUTTONS */
 .ui-dialog .ui-dialog-buttonpane { 
