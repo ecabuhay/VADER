@@ -206,11 +206,11 @@ nav a:hover{
 .btnVolDown { background-image: url('../img/soundDown.png'); -moz-border-radius: 15px; border-radius: 15px;  background-size: cover; width:13%; float: left; }
 .soundPanel { position: absolute; bottom: 0; left: 0; -moz-border-radius: 15px; border-radius: 15px; border-style: inset; background-color: rgba(175,176,179,.75);}
 .bottomButtons { position: relative; background-repeat: no-repeat; background-position: center; -moz-background-size: contain; background-size: contain; width: 20%; margin-bottom: 1%; -moz-border-radius: 15px; border-radius: 15px; border-style: outset; border-color: rgb(51, 173, 255) ;background-color: rgba(51, 173, 255,.75);}
-.inputText{ background-image: url('../img/inputText.png'); -moz-background-size: contain; background-size: contain; background-repeat: no-repeat; width: 7%;}
+.inputText{ background-image: url('../img/inputs.png'); -moz-background-size: contain; background-size: contain; background-repeat: no-repeat; width: 12%;}
 #leftInput{ position: absolute; left: 3%; top: 20%; }
 #rightInput{ position: absolute; left: 93%; top: 20%; }
 #justSources{ clear: none; margin: 0 0 0 18%;}
-.outputText{  background-image: url('../img/outputText2-1.png'); -moz-background-size: contain; background-size: contain; background-repeat: no-repeat; background-position: left center; width: 2%; }
+.outputText{  background-image: url('../img/outputs.png'); -moz-background-size: contain; background-size: contain; background-repeat: no-repeat; background-position: left center; width: 2%; }
 #leftOutput{ position: relative; height: auto; float: left; }
 #rightOutput{ position: relative; height: auto; float: right; }
 
