@@ -386,7 +386,7 @@
 					},
 					{
 						element: '#atv2,#atv1',
-						intro: '<br><br>2) From an unlocked screen double click the home button.<br><br><img src="img/atv2.png" style="width: 80%; margin: 0% 10% 0% 10%;" />',
+						intro: '<br><br>2) From an unlocked screen double click the home button.<br><br><img src="img/atv2.png" style="width: 80%; margin: 0% 10% 0% 10%;" /><br><br> Or if you are using iOS 7, you will just swipe up from the bottom of the screen and select the Airplay button shown below.<br><br><img src="img/ios7Capture.png" style="width: 80% height: 30%; margin: 0% 25% 0% 25%;" /><br><br>',
 						position: 'right'
 					},			
 					{
@@ -501,6 +501,8 @@
 			$("#helpAnchor").dialog({
 			height: 140,
 			modal: true,
+			draggable: false,
+			resizable: false,			
 			buttons: {
 				"Quick Help":function () {
 					$(this).dialog("close");
@@ -530,16 +532,7 @@
 			timeoutId = setTimeout( function() { mappings_get(); }, 5000);
 			intervalId = setInterval( function() { mappings_get(); }, 10000);
 		});
-
-		$('.btnPower, .btnPowerOn, .btnMute, .btnVolUp, .btnVolDown').hover(function(){
-		if ( !$(this).data('bnc') ){
-			  $(this).effect('bounce', { direction: 'up', distance: 10, times: 1 })
-					 .data('bnc', true);
-		}
-		},function () {
-			 $(this).data('bnc', false);
-		});	
-				
+			
 		$('.btnMute').click(function() {
 			$.get('http://mofdac.vader.jsc.nasa.gov:8000/display/' + $(this).data('output') + '/volume/mute');
 		});	
